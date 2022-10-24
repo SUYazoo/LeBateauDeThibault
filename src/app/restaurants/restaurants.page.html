@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Restaurants</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <button ion-item *ngFor="let restaurant of restaurantsList"
+  (click)="onLoadRestaurant(restaurant)">{{restaurant.nom}}</button>
+</ion-content>

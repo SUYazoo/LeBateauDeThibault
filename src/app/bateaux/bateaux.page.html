@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bateaux</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item detail ="true">
+    <button ion-item *ngFor="let boat of bateauList" (click) = "onLoadBateau(boat)">{{boat.bateauName}}</button> 
+  </ion-item>
+</ion-content>

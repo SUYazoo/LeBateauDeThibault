@@ -1,0 +1,9 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recettes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <button ion-item *ngFor="let recette of recettesList"
+  (click)="onLoadRecette(recette)">{{recette.nom}}</button>
+</ion-content>
